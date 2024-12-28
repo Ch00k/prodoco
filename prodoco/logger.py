@@ -15,13 +15,13 @@ LOGGING = {
             "()": UTCFormatter,
             "format": "{asctime}.{msecs:03.0f}Z {levelname:<8s} {message}",
             "style": "{",
-            # "format": "%(asctime)s.%(msecs)03dZ %(levelname)s\t %(message)s",
             "datefmt": "%Y-%m-%dT%H:%M:%S",
         },
     },
     "handlers": {
         "console": {
             "class": "logging.StreamHandler",
+            "stream": "ext://sys.stdout",
             "formatter": "utc",
         },
     },
