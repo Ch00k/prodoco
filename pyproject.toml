@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "prodoco"
-version = "0.0.1"
+version = "0.0.2"
 description = "Prometheus service discovery for Docker Compose"
 authors = ["Andrii Yurchuk <ay@mntw.re>"]
 license = "MIT"

@@ -76,6 +76,7 @@ def cli(docker_address: str, scrape_port_label: str, output_file: str | None, in
             args=[docker_address, scrape_port_label, output_file],
             seconds=interval,
         )
+        scheduler.start()
     else:
         config = discover(docker_address, scrape_port_label)
         write_config(config, output_file)

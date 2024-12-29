@@ -1,1 +1,1 @@
-# Prometheus Docker Compose Auto-Discovery
+# Prometheus service discovery for Docker Compose
